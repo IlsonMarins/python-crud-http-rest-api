@@ -8,3 +8,4 @@ restServer = Api(flaskAppInstance)
 
 restServer.add_resource(Task, "/api/v1.0/task")
 restServer.add_resource(TaskById, "/api/v1.0/task/id/<string:taskId>")
+restServer.add_resource(PersonDAO, "/hello/<string:username>")
