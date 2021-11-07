@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\data\OneDrive\workspace\learning\python-http-based-api\hello_flask\.venv"
+VIRTUAL_ENV="D:\data\OneDrive\workspace\learning\python-crud-http-rest-api\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

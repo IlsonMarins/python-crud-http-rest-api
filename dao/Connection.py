@@ -1,6 +1,5 @@
 import psycopg2
 from config import config
-import Connection as Connection
 
 class Connection():
     def getConnection():
@@ -17,12 +16,13 @@ class Connection():
             return conn
 
         except (Exception, psycopg2.DatabaseError) as error:
+            print("Caiu aqui!")
             print(error)
 
     def testConnection():
         conn = None
         try:
-            conn = getConnection()
+            conn = Connection.getConnection()
             # create a cursor
             cur = conn.cursor()
             
@@ -43,3 +43,5 @@ class Connection():
                 conn.close()
                 print('Database connection closed.')
 
+if __name__ == '__main__':
+    Connection.testConnection()
