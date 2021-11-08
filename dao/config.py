@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 
 
-def config(filename='database.ini', section='postgresql'):
+def config(filename='D:\data\OneDrive\workspace\learning\python-crud-http-rest-api\dao\database.ini', section='postgresql'):
     # create a parser
     parser = ConfigParser()
     # read config file

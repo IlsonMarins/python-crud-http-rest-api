@@ -3,6 +3,7 @@ from flask_restful import Api
 from app import flaskAppInstance
 from .Task import Task
 from .TaskById import TaskById
+from dao.Connection import *
 
 restServer = Api(flaskAppInstance)
 
